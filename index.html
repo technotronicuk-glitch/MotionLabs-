@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion Labs | Neuro-Robotic Systems</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --kinetic-orange: #FF5722;
+            --charcoal: #1A1A1B;
+        }
+        .bg-kinetic { background-color: var(--kinetic-orange); }
+        .text-kinetic { color: var(--kinetic-orange); }
+        .hero-gradient { background: linear-gradient(rgba(26,26,27,0.8), rgba(26,26,27,0.8)), url('your-hero-image.jpg'); background-size: cover; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <nav class="sticky top-0 z-50 bg-white border-b border-slate-200 px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold tracking-tighter text-slate-900">MOTION<span class="text-kinetic">LABS</span></div>
+        <div class="hidden md:flex space-x-8 font-medium">
+            <a href="#solutions" class="hover:text-kinetic transition">Solutions</a>
+            <a href="#lab" class="hover:text-kinetic transition">The Lab</a>
+            <a href="#impact" class="hover:text-kinetic transition">Impact</a>
+            <a href="portal.pdf" class="bg-kinetic text-white px-4 py-2 rounded-lg hover:opacity-90 transition">Investor PDF</a>
+        </div>
+    </nav>
+
+    <header class="hero-gradient h-[80vh] flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-3xl">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">THINK. MOVE. <span class="text-kinetic">BE.</span></h1>
+            <p class="text-lg md:text-xl text-slate-300 mb-8">Bridging the gap between human intent and mechanical execution through mind-controlled bionics.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-kinetic px-8 py-4 rounded-full text-lg font-bold">Request a Fitting</a>
+                <a href="#tech" class="border border-white/30 backdrop-blur-md px-8 py-4 rounded-full text-lg font-bold">Explore the Tech</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="solutions" class="py-20 px-6 max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 text-center">Interoperable Systems</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:border-kinetic transition duration-500">
+                <div class="text-kinetic text-4xl mb-4">🦾</div>
+                <h3 class="text-xl font-bold mb-2">Apex Limbs</h3>
+                <p class="text-slate-600">3D-printed, mind-controlled prosthetics with haptic skin for real-life touch feedback.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:border-kinetic transition duration-500">
+                <div class="text-kinetic text-4xl mb-4">🦿</div>
+                <h3 class="text-xl font-bold mb-2">Aegis Suits</h3>
+                <p class="text-slate-600">Assistive exoskeletons that sync with your BCI headset for seamless mobility.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:border-kinetic transition duration-500">
+                <div class="text-kinetic text-4xl mb-4">👁️</div>
+                <h3 class="text-xl font-bold mb-2">OcuScan</h3>
+                <p class="text-slate-600">Smart ocular devices that "see" and automate grip patterns for bionic hands.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-white text-xl font-bold mb-4 md:mb-0">MOTION<span class="text-kinetic">LABS</span></div>
+            <p>&copy; 2026 Motion Labs Bionics. All Rights Reserved. ISO 13485 Certified.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
