@@ -53,48 +53,89 @@
     </header>
 
     <section id="prosthetics" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="mb-16 text-center">
-            <h2 class="text-4xl font-black tracking-tight text-slate-900 uppercase italic">Prosthetic Excellence</h2>
-            <p class="text-slate-500 mt-2 font-medium">Standard-setting neural-linked limbs.</p>
-        </div>
+    <div class="mb-16 text-center">
+        <h2 class="text-4xl font-black tracking-tight text-slate-900 uppercase italic">Prosthetic Excellence</h2>
+        <p class="text-slate-500 mt-2 font-medium">Standard-setting neural-linked limbs.</p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 gap-12">
         
-        <div class="grid md:grid-cols-2 gap-12">
-            <div class="group bg-white rounded-[2rem] overflow-hidden shadow-xl border border-slate-100">
-                <div class="h-64 bg-slate-200 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&q=80" alt="Bionic Arm" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-                </div>
-                <div class="p-10">
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-2xl font-bold">Apex Upper Limbs</h3>
-                        <span class="text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full font-bold">AVAILABLE</span>
+        <div class="group bg-white rounded-[2rem] overflow-hidden shadow-xl border border-slate-100 flex flex-col">
+            <div class="relative h-80 bg-slate-200 overflow-hidden">
+                <div class="flex snap-x snap-mandatory overflow-x-auto h-full scrollbar-hide" id="arm-slider">
+                    <div class="snap-center shrink-0 w-full h-full">
+                        <img src="arm-main.jpg" alt="Apex Arm Main" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
                     </div>
-                    <p class="text-slate-600 mb-6">Multi-grip bionic hands with individual motor control for each digit. Features our proprietary 'Haptic Skin' for pressure sensitivity.</p>
-                    <ul class="space-y-2 mb-8 text-sm font-bold text-slate-500 uppercase tracking-tight">
-                        <li>• 16 Independent Grip Patterns</li>
-                        <li>• 48-Hour Battery Life</li>
-                        <li>• Myoelectric Control System</li>
-                    </ul>
+                    <div class="snap-center shrink-0 w-full h-full">
+                        <img src="arm-anatomy.jpg" alt="Apex Arm Anatomy" class="w-full h-full object-cover">
+                    </div>
+                    <div class="snap-center shrink-0 w-full h-full">
+                        <img src="arm-lifestyle.jpg" alt="Apex Arm Lifestyle" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                
+                <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                    <div class="w-1.5 h-1.5 rounded-full bg-white shadow-sm"></div>
+                    <div class="w-1.5 h-1.5 rounded-full bg-white/50 shadow-sm"></div>
+                    <div class="w-1.5 h-1.5 rounded-full bg-white/50 shadow-sm"></div>
+                </div>
+                <div class="absolute top-4 right-4 bg-slate-900/40 backdrop-blur-md text-white text-[9px] px-2 py-1 rounded-full font-bold uppercase tracking-widest pointer-events-none">
+                    Slide for Angles
                 </div>
             </div>
 
-            <div class="group bg-white rounded-[2rem] overflow-hidden shadow-xl border border-slate-100">
-                <div class="h-64 bg-slate-200 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1597161085260-c8f92ad5d6ba?auto=format&fit=crop&q=80" alt="Bionic Leg" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+            <div class="p-10">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-2xl font-bold">Apex Upper Limbs</h3>
+                    <span class="text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full font-bold">AVAILABLE</span>
                 </div>
-                <div class="p-10">
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-2xl font-bold">Apex Lower Limbs</h3>
-                        <span class="text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full font-bold">AVAILABLE</span>
-                    </div>
-                    <p class="text-slate-600 mb-6">Dynamic ankle-foot systems that adapt to terrain in real-time. Designed for everything from daily walking to high-impact athletics.</p>
-                    <ul class="space-y-2 mb-8 text-sm font-bold text-slate-500 uppercase tracking-tight">
-                        <li>• Terrain Sensing AI</li>
-                        <li>• Carbon Fiber Construction</li>
-                        <li>• Active Power-Push Off</li>
-                    </ul>
-                </div>
+                <p class="text-slate-600 mb-6">Multi-grip bionic hands with individual motor control for each digit. Features our proprietary 'Haptic Skin' for pressure sensitivity.</p>
+                <ul class="space-y-2 mb-8 text-sm font-bold text-slate-500 uppercase tracking-tight">
+                    <li>• 16 Independent Grip Patterns</li>
+                    <li>• 48-Hour Battery Life</li>
+                    <li>• Myoelectric Control System</li>
+                </ul>
             </div>
         </div>
+
+        <div class="group bg-white rounded-[2rem] overflow-hidden shadow-xl border border-slate-100 flex flex-col">
+            <div class="relative h-80 bg-slate-200 overflow-hidden">
+                <div class="flex snap-x snap-mandatory overflow-x-auto h-full scrollbar-hide" id="leg-slider">
+                    <div class="snap-center shrink-0 w-full h-full">
+                        <img src="leg-desk.jpg" alt="Apex Leg Desk View" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="snap-center shrink-0 w-full h-full">
+                        <img src="leg-action.jpg" alt="Apex Leg Action" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                
+                <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                    <div class="w-1.5 h-1.5 rounded-full bg-white shadow-sm"></div>
+                    <div class="w-1.5 h-1.5 rounded-full bg-white/50 shadow-sm"></div>
+                </div>
+            </div>
+
+            <div class="p-10">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-2xl font-bold">Apex Lower Limbs</h3>
+                    <span class="text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full font-bold">AVAILABLE</span>
+                </div>
+                <p class="text-slate-600 mb-6">Dynamic ankle-foot systems that adapt to terrain in real-time. Designed for everything from daily walking to high-impact athletics.</p>
+                <ul class="space-y-2 mb-8 text-sm font-bold text-slate-500 uppercase tracking-tight">
+                    <li>• Terrain Sensing AI</li>
+                    <li>• Carbon Fiber Construction</li>
+                    <li>• Active Power-Push Off</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
     </section>
 
     <section id="exoskeletons" class="bg-slate-900 py-24 px-6 text-white">
