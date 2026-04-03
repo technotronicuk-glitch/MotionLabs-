@@ -8,6 +8,7 @@
     <style>
         .text-kinetic { color: #ff5722; }
         .bg-kinetic { background-color: #ff5722; }
+        .border-kinetic { border-color: #ff5722; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 font-sans">
@@ -26,25 +27,76 @@
             <p class="max-w-xl text-slate-500 font-medium text-lg">We're looking for the world's best neural engineers, designers, and visionaries to help us bridge the gap between human and machine.</p>
         </div>
 
-        <div class="space-y-4">
+        <div class="space-y-4 mb-24">
             <div class="group bg-white p-8 rounded-3xl border border-slate-100 flex flex-col md:flex-row justify-between items-center hover:shadow-xl transition-all duration-300">
                 <div>
                     <span class="text-[10px] font-black bg-slate-100 px-3 py-1 rounded-full uppercase tracking-widest">Engineering</span>
                     <h3 class="text-2xl font-black mt-2 uppercase">Neural Interface Lead</h3>
-                    <p class="text-slate-500">Remote / Zürich, CH</p>
+                    <p class="text-slate-500 italic">London HQ / Hybrid</p>
                 </div>
-                <button class="mt-6 md:mt-0 px-8 py-3 rounded-full border-2 border-slate-900 font-bold uppercase text-xs hover:bg-slate-900 hover:text-white transition">Apply Now</button>
+                <a href="#apply" class="mt-6 md:mt-0 px-8 py-3 rounded-full border-2 border-slate-900 font-bold uppercase text-xs hover:bg-slate-900 hover:text-white transition">Apply Now</a>
             </div>
 
             <div class="group bg-white p-8 rounded-3xl border border-slate-100 flex flex-col md:flex-row justify-between items-center hover:shadow-xl transition-all duration-300">
                 <div>
                     <span class="text-[10px] font-black bg-slate-100 px-3 py-1 rounded-full uppercase tracking-widest">Design</span>
                     <h3 class="text-2xl font-black mt-2 uppercase">Bionic UX Designer</h3>
-                    <p class="text-slate-500">London, UK / Hybrid</p>
+                    <p class="text-slate-500 italic">London HQ / On-site</p>
                 </div>
-                <button class="mt-6 md:mt-0 px-8 py-3 rounded-full border-2 border-slate-900 font-bold uppercase text-xs hover:bg-slate-900 hover:text-white transition">Apply Now</button>
+                <a href="#apply" class="mt-6 md:mt-0 px-8 py-3 rounded-full border-2 border-slate-900 font-bold uppercase text-xs hover:bg-slate-900 hover:text-white transition">Apply Now</a>
             </div>
         </div>
+
+        <section id="apply" class="max-w-3xl mx-auto bg-white p-10 md:p-16 rounded-[3rem] shadow-2xl border border-slate-100">
+            <div class="mb-10 text-center">
+                <h2 class="text-4xl font-black uppercase italic tracking-tight">Apply <span class="text-kinetic">Now</span></h2>
+                <p class="text-slate-400 font-medium mt-2">Submit your credentials for neural-review.</p>
+            </div>
+
+            <form action="#" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2 ml-2">Full Name</label>
+                        <input type="text" placeholder="John Doe" class="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:border-kinetic focus:ring-1 focus:ring-kinetic transition">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2 ml-2">Email Address</label>
+                        <input type="email" placeholder="john@interface.io" class="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:border-kinetic focus:ring-1 focus:ring-kinetic transition">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2 ml-2">Phone Number</label>
+                    <input type="tel" placeholder="+44 20 7946 0000" class="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:border-kinetic focus:ring-1 focus:ring-kinetic transition">
+                </div>
+
+                <div>
+                    <label class="block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2 ml-2">Message / Motivation</label>
+                    <textarea rows="4" placeholder="Tell us why you want to join the evolution..." class="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:border-kinetic focus:ring-1 focus:ring-kinetic transition"></textarea>
+                </div>
+
+                <div>
+                    <label class="block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2 ml-2">Attach Resume (PDF)</label>
+                    <div class="relative group cursor-pointer">
+                        <input type="file" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10">
+                        <div class="w-full px-6 py-8 bg-slate-50 border-2 border-dashed border-slate-200 rounded-2xl flex flex-col items-center justify-center group-hover:border-kinetic group-hover:bg-orange-50 transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-slate-300 group-hover:text-kinetic mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                            </svg>
+                            <span class="text-xs font-bold text-slate-400 group-hover:text-kinetic">Click to upload or drag and drop</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full py-5 bg-slate-900 text-white font-black uppercase tracking-[0.2em] rounded-2xl hover:bg-kinetic hover:scale-[1.02] transition-all shadow-xl">
+                    Submit Application
+                </button>
+            </form>
+        </section>
     </main>
+
+    <footer class="py-12 text-center text-[10px] font-black text-slate-300 uppercase tracking-[0.3em]">
+        © 2026 MotionLabs Bionics - Neural Ready
+    </footer>
 </body>
 </html>
