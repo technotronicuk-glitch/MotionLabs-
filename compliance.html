@@ -3,25 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compliance & IP | Motion Labs</title>
+    <title>Compliance & IP | Motion Labs London</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root { --kinetic-orange: #FF5722; }
         .text-kinetic { color: var(--kinetic-orange); }
         .bg-kinetic { background-color: var(--kinetic-orange); }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
-<body class="bg-white font-sans">
+<body class="bg-white font-sans text-slate-900">
 
-    <nav class="sticky top-0 z-50 bg-white/90 border-b border-slate-200 px-6 py-4 flex justify-between items-center">
-        <a href="index.html" class="text-2xl font-black tracking-tighter text-slate-900 uppercase">
-            Motion<span class="text-kinetic">Labs</span>
-        </a>
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 px-6 py-4 flex justify-between items-center uppercase font-bold text-xs tracking-widest">
+        <a href="index.html" class="text-xl font-black italic">Motion<span class="text-kinetic">Labs</span></a>
+        <div class="flex gap-8">
+            <a href="index.html" class="hover:text-kinetic transition underline decoration-kinetic underline-offset-8">Return Home</a>
+            <a href="faq.html" class="hover:text-kinetic transition">Support FAQ</a>
+        </div>
     </nav>
 
-    <div id="ip-section"> </div>
-    <div id="shipping-section"> </div>
-    <div id="ethics-section"> </div>
+    <section id="ip-ethics" class="py-24 px-6 border-b border-slate-100">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl font-black italic uppercase mb-8">Intellectual <span class="text-kinetic">Property</span></h1>
+            <p class="text-slate-600 mb-6 leading-relaxed">As a subsidiary of <strong>Technotronics Group</strong>, Motion Labs holds exclusive rights to the Neural-Sync™ firmware and Apex hardware schematics. All biometric processing algorithms are proprietary.</p>
+            <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
+                <h4 class="font-bold uppercase text-xs mb-4">Current Patents</h4>
+                <ul class="text-xs space-y-2 text-slate-500 font-medium">
+                    <li>• UK-PAT-2026-001: Myoelectric Signal Filtering</li>
+                    <li>• UK-PAT-2026-009: Pneumatic Ankle Dampening Systems</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="neural-data-ethics" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-black italic uppercase mb-8">Neural Data <span class="text-slate-400">Ethics</span></h2>
+            <p class="text-slate-600 leading-relaxed italic">
+                "Your neural signals are your identity." We never store raw brainwave data. All signals are processed locally on the Apex limb and encrypted before any cloud-based AI calibration occurs.
+            </p>
+        </div>
+    </section>
+
+    <section id="shipping-fitting" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-black italic uppercase mb-8">Fitting & <span class="text-kinetic">Shipping</span></h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h4 class="font-bold uppercase text-xs text-slate-400 mb-4">London Lab Fitting</h4>
+                    <p class="text-sm text-slate-600">Appointments are required at our Canary Wharf facility. Fitting takes 72 hours for full neural synchronization.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold uppercase text-xs text-slate-400 mb-4">International Logistics</h4>
+                    <p class="text-sm text-slate-600">We utilize Technotronics' global logistics network for secure, tracked delivery of bionic systems worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
