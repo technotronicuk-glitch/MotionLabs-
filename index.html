@@ -3,112 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motion Labs | Neuro-Robotic Systems</title>
+    <title>Motion Labs | Human Augmentation & Neuro-Robotics</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root {
             --kinetic-orange: #FF5722;
-            --charcoal: #1A1A1B;
+            --tech-blue: #0ea5e9;
+            --charcoal: #111827;
         }
         .bg-kinetic { background-color: var(--kinetic-orange); }
         .text-kinetic { color: var(--kinetic-orange); }
-        .hero-gradient { background: linear-gradient(rgba(26,26,27,0.8), rgba(26,26,27,0.8)), url('your-hero-image.jpg'); background-size: cover; }
+        .hero-gradient { 
+            background: linear-gradient(rgba(17, 24, 39, 0.85), rgba(17, 24, 39, 0.85)), 
+            url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80'); 
+            background-size: cover; 
+            background-position: center;
+        }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 font-sans">
 
-    <nav class="sticky top-0 z-50 bg-white border-b border-slate-200 px-6 py-4 flex justify-between items-center">
-        <div class="text-2xl font-bold tracking-tighter text-slate-900">MOTION<span class="text-kinetic">LABS</span></div>
-        <div class="hidden md:flex space-x-8 font-medium">
-            <a href="#solutions" class="hover:text-kinetic transition">Solutions</a>
-            <a href="#lab" class="hover:text-kinetic transition">The Lab</a>
-            <a href="#impact" class="hover:text-kinetic transition">Impact</a>
-            <a href="portal.pdf" class="bg-kinetic text-white px-4 py-2 rounded-lg hover:opacity-90 transition">Investor PDF</a>
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-black tracking-tighter text-slate-900 uppercase">
+            Motion<span class="text-kinetic">Labs</span>
+        </div>
+        <div class="hidden md:flex space-x-8 font-bold text-sm uppercase tracking-widest">
+            <a href="#prosthetics" class="hover:text-kinetic transition">Prosthetics</a>
+            <a href="#exoskeletons" class="hover:text-kinetic transition">Exoskeletons</a>
+            <a href="#research" class="hover:text-kinetic transition">R&D</a>
+            <a href="portal.pdf" class="bg-slate-900 text-white px-5 py-2 rounded-full hover:bg-kinetic transition">Investor Portal</a>
         </div>
     </nav>
 
-    <header class="hero-gradient h-[80vh] flex items-center justify-center text-center text-white px-4">
-        <div class="max-w-3xl">
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">THINK. MOVE. <span class="text-kinetic">BE.</span></h1>
-            <p class="text-lg md:text-xl text-slate-300 mb-8">Bridging the gap between human intent and mechanical execution through mind-controlled bionics.</p>
-            <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="#contact" class="bg-kinetic px-8 py-4 rounded-full text-lg font-bold">Request a Fitting</a>
-                <a href="#tech" class="border border-white/30 backdrop-blur-md px-8 py-4 rounded-full text-lg font-bold">Explore the Tech</a>
+    <header class="hero-gradient h-[90vh] flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-4xl">
+            <span class="inline-block px-4 py-1 border border-kinetic text-kinetic rounded-full text-xs font-bold mb-6 tracking-[0.2em] uppercase">Next-Gen Neuro-Integration</span>
+            <h1 class="text-6xl md:text-8xl font-black mb-8 tracking-tighter leading-none">
+                THE FUTURE IS <span class="text-kinetic">FLUID.</span>
+            </h1>
+            <p class="text-lg md:text-2xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Advanced bionics designed to restore and enhance human capability through neural synchronization.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#prosthetics" class="bg-kinetic px-10 py-5 rounded-full text-lg font-black hover:scale-105 transition shadow-xl shadow-orange-500/20">View Catalog</a>
+                <a href="#research" class="border border-white/20 backdrop-blur-md px-10 py-5 rounded-full text-lg font-black hover:bg-white hover:text-slate-900 transition">Current R&D</a>
             </div>
         </div>
     </header>
 
-    <section id="solutions" class="py-20 px-6 max-w-7xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 text-center">Interoperable Systems</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:border-kinetic transition duration-500">
-                <div class="text-kinetic text-4xl mb-4">🦾</div>
-                <h3 class="text-xl font-bold mb-2">Apex Limbs</h3>
-                <p class="text-slate-600">3D-printed, mind-controlled prosthetics with haptic skin for real-life touch feedback.</p>
+    <section id="prosthetics" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="mb-16 text-center">
+            <h2 class="text-4xl font-black tracking-tight text-slate-900 uppercase italic">Prosthetic Excellence</h2>
+            <p class="text-slate-500 mt-2 font-medium">Standard-setting neural-linked limbs.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="group bg-white rounded-[2rem] overflow-hidden shadow-xl border border-slate-100">
+                <div class="h-64 bg-slate-200 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&q=80" alt="Bionic Arm" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                </div>
+                <div class="p-10">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold">Apex Upper Limbs</h3>
+                        <span class="text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full font-bold">AVAILABLE</span>
+                    </div>
+                    <p class="text-slate-600 mb-6">Multi-grip bionic hands with individual motor control for each digit. Features our proprietary 'Haptic Skin' for pressure sensitivity.</p>
+                    <ul class="space-y-2 mb-8 text-sm font-bold text-slate-500 uppercase tracking-tight">
+                        <li>• 16 Independent Grip Patterns</li>
+                        <li>• 48-Hour Battery Life</li>
+                        <li>• Myoelectric Control System</li>
+                    </ul>
+                </div>
             </div>
-            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:border-kinetic transition duration-500">
-                <div class="text-kinetic text-4xl mb-4">🦿</div>
-                <h3 class="text-xl font-bold mb-2">Aegis Suits</h3>
-                <p class="text-slate-600">Assistive exoskeletons that sync with your BCI headset for seamless mobility.</p>
-            </div>
-            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:border-kinetic transition duration-500">
-                <div class="text-kinetic text-4xl mb-4">👁️</div>
-                <h3 class="text-xl font-bold mb-2">OcuScan</h3>
-                <p class="text-slate-600">Smart ocular devices that "see" and automate grip patterns for bionic hands.</p>
+
+            <div class="group bg-white rounded-[2rem] overflow-hidden shadow-xl border border-slate-100">
+                <div class="h-64 bg-slate-200 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1597161085260-c8f92ad5d6ba?auto=format&fit=crop&q=80" alt="Bionic Leg" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                </div>
+                <div class="p-10">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold">Apex Lower Limbs</h3>
+                        <span class="text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full font-bold">AVAILABLE</span>
+                    </div>
+                    <p class="text-slate-600 mb-6">Dynamic ankle-foot systems that adapt to terrain in real-time. Designed for everything from daily walking to high-impact athletics.</p>
+                    <ul class="space-y-2 mb-8 text-sm font-bold text-slate-500 uppercase tracking-tight">
+                        <li>• Terrain Sensing AI</li>
+                        <li>• Carbon Fiber Construction</li>
+                        <li>• Active Power-Push Off</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
-    <footer class="bg-black text-[#A1A1A1] py-10 px-6 border-t border-white/10 uppercase tracking-tight font-medium">
-    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-start gap-10">
-        
-        <div class="flex-1 min-w-[250px]">
-            <h2 class="text-white text-xl font-black mb-3 tracking-tighter">MOTIONLABS</h2>
-            <p class="text-xs leading-normal max-w-[280px] opacity-80 normal-case">
-                Restoring human motion through neural integration. We bridge the gap between mind and machine with affordable, lifelike bionics.
-            </p>
-        </div>
 
-        <div class="min-w-[140px]">
-            <h3 class="text-white text-sm font-bold mb-4 border-b border-white/10 pb-1">Social Links</h3>
-            <div class="grid grid-cols-4 gap-3 text-[11px] font-bold">
-                <a href="#" class="hover:text-white transition">[IG]</a> 
-                <a href="#" class="hover:text-white transition">[FB]</a> 
-                <a href="#" class="hover:text-white transition">[TK]</a> 
-                <a href="#" class="hover:text-white transition">[YT]</a>
-                <a href="#" class="hover:text-white transition">[PN]</a> 
-                <a href="#" class="hover:text-white transition">[IN]</a> 
-                <a href="#" class="hover:text-white transition">[ML]</a> 
-                <a href="#" class="hover:text-white transition">[WA]</a>
+    <section id="exoskeletons" class="bg-slate-900 py-24 px-6 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-black mb-6 italic uppercase tracking-tighter">Support Where It <span class="text-kinetic">Matters.</span></h2>
+                    <p class="text-slate-400 text-lg mb-8 italic">Enhancing mobility for the elderly and those with chronic joint conditions.</p>
+                    
+                    <div class="space-y-8">
+                        <div class="flex gap-6">
+                            <div class="bg-kinetic/10 p-4 rounded-2xl h-fit">🦿</div>
+                            <div>
+                                <h4 class="font-bold text-xl mb-1 text-kinetic">Kineti-Knee Caps</h4>
+                                <p class="text-slate-400 text-sm">Active pneumatic bracing for the elderly. Reduces joint load by 40% during stair climbing and standing.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="bg-blue-500/10 p-4 rounded-2xl h-fit">🛡️</div>
+                            <div>
+                                <h4 class="font-bold text-xl mb-1 text-blue-400">Aegis Full-Body Exoskeleton</h4>
+                                <p class="text-slate-400 text-sm">Workplace safety suits designed to prevent spinal injuries during heavy lifting.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-800 h-[500px] rounded-[3rem] border border-white/5 flex items-center justify-center italic text-slate-500">
+                    [Product Render: Active Knee Support System]
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="min-w-[180px]">
-            <h3 class="text-white text-sm font-bold mb-4 border-b border-white/10 pb-1">Global HQ</h3>
-            <p class="text-xs leading-relaxed opacity-80">
-                Innovation Quarter, Sparq Labs<br>
-                Winston-Salem, NC 27101, USA
-            </p>
-        </div>
-
-        <div class="min-w-[180px]">
-            <h3 class="text-white text-sm font-bold mb-4 border-b border-white/10 pb-1">Compliance & Support</h3>
-            <div class="flex flex-col gap-2 text-[11px] font-bold">
-                <a href="#faq" class="hover:text-white transition">FAQ</a>
-                <a href="#shipping" class="hover:text-white transition">Shipping & Fitting</a>
-                <a href="#returns" class="hover:text-white transition">Return Policy</a>
-                <a href="#privacy" class="hover:text-white transition">Privacy Policy</a>
-                <a href="#terms" class="hover:text-white transition">Terms & IP</a>
+    <section id="research" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="bg-white p-12 rounded-[3rem] border border-slate-100 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/3">
+                <div class="w-20 h-20 bg-slate-900 rounded-full flex items-center justify-center text-4xl mb-6 shadow-xl">👁️</div>
+                <h2 class="text-3xl font-black mb-4 tracking-tighter uppercase italic">OcuScan <span class="text-kinetic">Vision</span></h2>
+                <span class="px-3 py-1 bg-amber-100 text-amber-700 text-[10px] font-black rounded-full">IN CLINICAL TRIALS</span>
+            </div>
+            <div class="md:w-2/3">
+                <p class="text-slate-600 leading-relaxed text-lg italic">
+                    Our current flagship research project. We are developing a bionic eye that doesn't just restore sight, but integrates with our bionic hands to automate grip patterns based on the objects you look at. 
+                    <strong>True synergy between vision and motion.</strong>
+                </p>
+                <div class="mt-8 flex gap-4">
+                    <div class="h-2 flex-1 bg-slate-100 rounded-full overflow-hidden">
+                        <div class="h-full bg-kinetic w-[65%]"></div>
+                    </div>
+                    <span class="text-xs font-bold text-slate-400 uppercase">Phase 2: Neural Mapping</span>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <div class="max-w-7xl mx-auto border-t border-white/10 mt-10 pt-6 flex justify-between items-center text-[10px] opacity-60 font-bold">
-        <p>© 2026 MOTION LABS BIONICS. ALL RIGHTS RESERVED.</p>
-        <div class="flex gap-4">
-            <span>ISO 13485 CERTIFIED</span>
-            <span>FDA CLASS II COMPLIANT</span>
+    </section>
+
+    <footer class="bg-black text-[#A1A1A1] py-16 px-6 border-t border-white/10 uppercase tracking-tight font-medium">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-start gap-10">
+            <div class="flex-1 min-w-[250px]">
+                <h2 class="text-white text-xl font-black mb-3 tracking-tighter italic">MOTION<span class="text-kinetic">LABS</span></h2>
+                <p class="text-xs leading-normal max-w-[280px] opacity-80 normal-case">
+                    Restoring human motion through neural integration. We bridge the gap between mind and machine with affordable, lifelike bionics.
+                </p>
+            </div>
+            <div class="min-w-[140px]">
+                <h3 class="text-white text-sm font-bold mb-4 border-b border-white/10 pb-1">Social Links</h3>
+                <div class="grid grid-cols-4 gap-3 text-[11px] font-bold">
+                    <a href="#" class="hover:text-white transition">[IG]</a> <a href="#" class="hover:text-white transition">[FB]</a> 
+                    <a href="#" class="hover:text-white transition">[TK]</a> <a href="#" class="hover:text-white transition">[YT]</a>
+                    <a href="#" class="hover:text-white transition">[PN]</a> <a href="#" class="hover:text-white transition">[IN]</a> 
+                    <a href="#" class="hover:text-white transition">[ML]</a> <a href="#" class="hover:text-white transition">[WA]</a>
+                </div>
+            </div>
+            <div class="min-w-[180px]">
+                <h3 class="text-white text-sm font-bold mb-4 border-b border-white/10 pb-1">Global HQ</h3>
+                <p class="text-xs leading-relaxed opacity-80 normal-case">
+                    Innovation Quarter, Sparq Labs<br>
+                    Winston-Salem, NC 27101, USA
+                </p>
+            </div>
+            <div class="min-w-[180px]">
+                <h3 class="text-white text-sm font-bold mb-4 border-b border-white/10 pb-1">Compliance</h3>
+                <div class="flex flex-col gap-2 text-[11px] font-bold">
+                    <a href="#" class="hover:text-white transition">FAQ</a>
+                    <a href="#" class="hover:text-white transition">Shipping & Fitting</a>
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                </div>
+            </div>
         </div>
-    </div>
-</footer>
+        <div class="max-w-7xl mx-auto border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] opacity-60 font-bold gap-4">
+            <p>© 2026 MOTION LABS BIONICS. ALL RIGHTS RESERVED.</p>
+            <div class="flex gap-4">
+                <span>ISO 13485 CERTIFIED</span>
+                <span>FDA CLASS II COMPLIANT</span>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
