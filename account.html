@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account | MotionLabs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .text-kinetic { color: #ff5722; } /* Match your brand orange */
+        .bg-kinetic { background-color: #ff5722; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+    <nav class="p-6">
+        <a href="index.html" class="text-sm font-bold uppercase tracking-widest flex items-center gap-2 hover:text-kinetic transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to Hub
+        </a>
+    </nav>
+
+    <main class="max-w-4xl mx-auto py-12 px-6">
+        <header class="mb-12">
+            <h1 class="text-5xl font-black uppercase italic tracking-tighter">User <span class="text-kinetic">Portal</span></h1>
+            <p class="text-slate-500 font-medium">System Status: <span class="text-green-500">Synchronized</span></p>
+        </header>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100">
+                <p class="text-xs font-bold text-slate-400 uppercase">Device Battery</p>
+                <p class="text-3xl font-black text-slate-900">88%</p>
+            </div>
+            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100">
+                <p class="text-xs font-bold text-slate-400 uppercase">Neural Latency</p>
+                <p class="text-3xl font-black text-slate-900">1.2ms</p>
+            </div>
+            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100">
+                <p class="text-xs font-bold text-slate-400 uppercase">Next Service</p>
+                <p class="text-3xl font-black text-slate-900">14d</p>
+            </div>
+        </div>
+
+        <section class="bg-slate-900 text-white rounded-[2.5rem] p-10 shadow-2xl">
+            <h2 class="text-2xl font-bold mb-6">Security Settings</h2>
+            <form class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold uppercase mb-2 opacity-50">Email Address</label>
+                    <input type="email" value="user@motionlabs.io" class="w-full bg-white/10 border border-white/20 rounded-xl p-4 text-white focus:outline-none focus:border-kinetic">
+                </div>
+                <button class="bg-kinetic text-white font-black px-8 py-4 rounded-xl uppercase tracking-widest text-sm hover:scale-105 transition">Update Profile</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
