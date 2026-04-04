@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Detail | MotionLabs x OpenBCI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .text-kinetic { color: #ff5722; }
+        .bg-kinetic { background-color: #ff5722; }
+        .hero-bg { 
+            background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), 
+            url('https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&q=80');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <nav class="p-8 max-w-7xl mx-auto flex justify-between items-center">
+        <a href="index.html" class="font-black uppercase tracking-tighter text-2xl">
+            MOTION<span class="text-kinetic">LABS</span>
+        </a>
+        <a href="index.html" class="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-slate-900 transition">
+            ← Back to Hub
+        </a>
+    </nav>
+
+    <header class="hero-bg py-24 px-6 text-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <span class="text-kinetic font-black uppercase tracking-[0.3em] text-[10px] mb-4 block">Collaborative Project: ML-09</span>
+            <h1 class="text-5xl md:text-7xl font-black uppercase italic tracking-tighter mb-6">The OcuScan <br> Initiative</h1>
+            <p class="text-slate-400 text-lg md:text-xl font-medium leading-relaxed max-w-2xl mx-auto">
+                In partnership with <span class="text-white">OpenBCI</span>, we are mapping the visual cortex to restore sight through high-bandwidth neural telemetry.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto py-20 px-6">
+        <div class="grid md:grid-cols-2 gap-8 mb-24">
+            <div class="bg-white p-4 rounded-[2rem] shadow-xl border border-slate-100 group">
+                <div class="rounded-[1.5rem] overflow-hidden aspect-video bg-slate-200">
+                    <img src="research-img-1.jpg" alt="Lab Setup" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <p class="mt-4 text-[10px] font-black uppercase text-slate-400 text-center tracking-widest">Fig 01. Neural Mapping Laboratory</p>
+            </div>
+            <div class="bg-white p-4 rounded-[2rem] shadow-xl border border-slate-100 group">
+                <div class="rounded-[1.5rem] overflow-hidden aspect-video bg-slate-200">
+                    <img src="research-img-2.jpg" alt="BCI Test" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <p class="mt-4 text-[10px] font-black uppercase text-slate-400 text-center tracking-widest">Fig 02. OpenBCI Integration Testing</p>
+            </div>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-12 mb-24">
+            <div class="space-y-4">
+                <div class="text-4xl">🔬</div>
+                <h3 class="text-xl font-black uppercase italic tracking-tight">Bionic Vision</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">
+                    Developing high-density retinal arrays that bypass damaged optic nerves to send data directly to the brain.
+                </p>
+            </div>
+            <div class="space-y-4">
+                <div class="text-4xl">🧠</div>
+                <h3 class="text-xl font-black uppercase italic tracking-tight">BCI Interface</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">
+                    Utilizing OpenBCI’s open-source hardware to create non-invasive neural links with 99.9% signal fidelity.
+                </p>
+            </div>
+            <div class="space-y-4">
+                <div class="text-4xl">🤖</div>
+                <h3 class="text-xl font-black uppercase italic tracking-tight">AI Synthesis</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">
+                    On-board machine learning filters visual noise in real-time, highlighting obstacles and faces for the user.
+                </p>
+            </div>
+        </div>
+
+        <div class="bg-slate-900 rounded-[3rem] p-12 text-white overflow-hidden relative">
+            <div class="relative z-10 grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-black uppercase italic tracking-tighter mb-8">Technical <br> <span class="text-kinetic">Whitepaper</span></h2>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        The current Phase 2 focus is on "Contextual Awareness." By integrating AI with bionic sight, the prosthetic doesn't just see—it understands the environment to predict user motion.
+                    </p>
+                    <ul class="space-y-3 text-xs font-bold uppercase tracking-widest">
+                        <li class="flex items-center gap-2"><span class="text-kinetic">✓</span> 10,000 Neural Channels</li>
+                        <li class="flex items-center gap-2"><span class="text-kinetic">✓</span> 4K Neural Resolution</li>
+                        <li class="flex items-center gap-2"><span class="text-kinetic">✓</span> Zero-Latency Sync</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 rounded-[2rem] p-8 border border-white/10 aspect-square flex flex-col items-center justify-center text-center">
+                    <div class="text-6xl mb-4">📊</div>
+                    <p class="text-xs font-black uppercase tracking-widest opacity-60">Neural Fidelity Chart</p>
+                    <p class="text-[10px] mt-2 italic opacity-40">[Data Visualization: Protected ML-Property]</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-12 text-center text-[10px] font-black text-slate-300 uppercase tracking-[0.3em]">
+        © 2026 MotionLabs Research Hub - Secure Data Link
+    </footer>
+
+</body>
+</html>
