@@ -89,12 +89,43 @@
                         <li class="flex items-center gap-2"><span class="text-kinetic">✓</span> Zero-Latency Sync</li>
                     </ul>
                 </div>
-                <div class="bg-white/5 rounded-[2rem] p-8 border border-white/10 aspect-square flex flex-col items-center justify-center text-center">
-                    <div class="text-6xl mb-4">📊</div>
-                    <p class="text-xs font-black uppercase tracking-widest opacity-60">Neural Fidelity Chart</p>
-                    <p class="text-[10px] mt-2 italic opacity-40">[Data Visualization: Protected ML-Property]</p>
-                </div>
-            </div>
+                <div class="bg-white/5 rounded-[2rem] p-8 border border-white/10 aspect-square flex flex-col items-center justify-end text-center">
+    
+    <div class="fidelity-image-wrapper flex-grow flex items-center justify-center">
+        <img src="ak.png" alt="Neural Fidelity Landscapes" class="fidelity-chart-img">
+    </div>
+
+    <p class="text-xs font-black uppercase tracking-widest opacity-60 fidelity-text">Neural Fidelity Chart</p>
+    <p class="text-[10px] mt-2 italic opacity-40 fidelity-protected">[Data Visualization: Protected ML-Property]</p>
+
+</div>
+
+<style>
+/* CSS FOR THE FIDELITY CHART BOX */
+.fidelity-image-wrapper {
+    width: 100%;
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+.fidelity-chart-img {
+    max-width: 100%;
+    max-height: 80%; /* Limits height to fit the box well */
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Keeps the aspect ratio of the 3D plots correct */
+    display: block;
+}
+
+/* Specific styling for the preserved text lines */
+.fidelity-text {
+    /* Tailwind classes are applied, but this forces them if needed */
+    margin-top: 15px; 
+}
+
+.fidelity-protected {
+    margin-bottom: 5px; /* Adjust spacing at the very bottom */
+}
+</style>
         </div>
     </main>
 
